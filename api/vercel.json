@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "functions": {
+    "api/telegram.js": {
+      "runtime": "vercel-nodejs@2.0",
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/telegram.js"
+    }
+  ]
+}
